@@ -75,3 +75,9 @@ Il progetto è sviluppato in **collaborazione tra più persone**, utilizzando **
 - Non lavorare mai direttamente su `master` o `develop`  
 - Ogni funzionalità deve avere il proprio branch  
 - Il merge (unione) avviene solo tramite Pull Request, e solo il PM può accettare il merge, dopo aver verificato il corretto funzionamento della feature implementata.
+
+---
+
+### Materiale disponibile
+
+1. branch **fitlife/views/example**, contiene il codice per realizzare il frontend del progetto della palestra di Gioele. Questo può essere utile a Jeff per realizzare la struttura del progetto **sondaggi**
