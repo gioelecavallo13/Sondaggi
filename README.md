@@ -1,59 +1,76 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+## Informazioni sul progetto
+**Data di assegnazione:** 18/02/2026  
+**Data di consegna:** Aprile 2026
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+### Team e Ruoli
+1. **Gioele Cavallo:** Project Manager, gestione infrastrutture, problem solver  
+2. **Jeorge Mantala:** Sviluppo backend  
+3. **Jefferson Martinez:** Sviluppo frontend  
+4. **Edward Amante:** Creazione e gestione database
 
-## About Laravel
+---
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 📌 Descrizione del progetto
+Il progetto **Sondaggi** consiste nello sviluppo di un sistema che permette a un utente di **creare sondaggi online** e ad altri utenti di **partecipare votando**.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+Ogni sondaggio è composto da una domanda e da un numero limitato di opzioni di risposta.  
+Il sistema garantisce che ogni utente possa **votare una sola volta** per ciascun sondaggio e consente di **visualizzare i risultati aggiornati in tempo reale**.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Il progetto è sviluppato in **collaborazione tra più persone**, utilizzando **Git e GitHub** per la gestione del codice e seguendo una strategia di branch che protegge il codice stabile e facilita il lavoro di squadra.
 
-## Learning Laravel
+---
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+## 🧑‍💻 Lavorare al progetto con Visual Studio Code (modalità grafica)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 🔽 Clonare il repository
+1. Aprire **Visual Studio Code**
+2. Premere **Ctrl + Shift + P** per aprire la *Command Palette*
+3. Scrivere **Git: Clone** e selezionarlo
+4. Incollare l’URL del repository GitHub: `https://github.com/gioelecavallo13/Sondaggi.git`
+5. Scegliere la cartella dove salvare il progetto
+6. Cliccare su **Open** quando VS Code chiede di aprire il progetto
 
-## Laravel Sponsors
+---
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 🌿 Creare e lavorare sul proprio branch
+1. In basso a sinistra, cliccare sul nome del branch (es. `main` o `develop`)
+2. Selezionare **Create new branch**
+3. Inserire il nome del branch (es. `nome_collaboratore/feature_da_implementare`)
+4. Premere **Invio**
 
-### Premium Partners
+👉 Tutto il lavoro verrà ora fatto su questo branch.
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+---
 
-## Contributing
+### 💾 Salvare le modifiche e creare un commit
+1. Aprire il pannello **Source Control** (icona con i rami a sinistra)
+2. Visualizzare la lista dei file modificati
+3. Cliccare sul **+** accanto ai file per aggiungerli al commit
+4. Scrivere un messaggio chiaro nel campo del commit
+5. Premere **✓ Commit**
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+---
 
-## Code of Conduct
+### 🚀 Pubblicare il branch su GitHub
+1. Dopo il commit, VS Code mostrerà il pulsante **Publish Branch**
+2. Cliccare su **Publish Branch**
+3. Attendere il completamento del push
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+### 🔁 Creare una richiesta di merge (Pull Request)
+1. Aprire il repository su **GitHub**
+2. Comparirà un messaggio con il nuovo branch
+3. Cliccare su **Compare & pull request**
+4. Impostare:
+   - **Branch di destinazione:** `develop`
+   - **Branch di origine:** il proprio branch
+5. Inserire titolo e descrizione della Pull Request
+6. Cliccare su **Create pull request**
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+---
 
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### ⚠️ Regole importanti
+- Non lavorare mai direttamente su `main` o `develop`  
+- Ogni funzionalità deve avere il proprio branch  
+- Il merge avviene solo tramite Pull Request
