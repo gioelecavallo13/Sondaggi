@@ -33,7 +33,7 @@ Il progetto è sviluppato in **collaborazione tra più persone**, utilizzando **
 ---
 
 ### 🌿 Creare e lavorare sul proprio branch
-1. In basso a sinistra, cliccare sul nome del branch (es. `main` o `develop`)
+1. In basso a sinistra, cliccare sul nome del branch (es. `master` o `develop`)
 2. Selezionare **Create new branch**
 3. Inserire il nome del branch (es. `nome_collaboratore/feature_da_implementare`)
 4. Premere **Invio**
@@ -43,9 +43,10 @@ Il progetto è sviluppato in **collaborazione tra più persone**, utilizzando **
 ---
 
 ### 💾 Salvare le modifiche e creare un commit
-1. Aprire il pannello **Source Control** (icona con i rami a sinistra)
+1. Aprire il pannello **Explorer** (icona file a sinistra)
+2. Aprire il menu a tendina **Source Control: changes**
 2. Visualizzare la lista dei file modificati
-3. Cliccare sul **+** accanto ai file per aggiungerli al commit
+3. Cliccare sul **+** accanto ai file per aggiungerli al commit (salvataggio)
 4. Scrivere un messaggio chiaro nel campo del commit
 5. Premere **✓ Commit**
 
@@ -71,6 +72,6 @@ Il progetto è sviluppato in **collaborazione tra più persone**, utilizzando **
 ---
 
 ### ⚠️ Regole importanti
-- Non lavorare mai direttamente su `main` o `develop`  
+- Non lavorare mai direttamente su `master` o `develop`  
 - Ogni funzionalità deve avere il proprio branch  
-- Il merge avviene solo tramite Pull Request
+- Il merge (unione) avviene solo tramite Pull Request, e solo il PM può accettare il merge, dopo aver verificato il corretto funzionamento della feature implementata.
