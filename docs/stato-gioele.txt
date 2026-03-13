@@ -1,0 +1,50 @@
+Nome: Gioele Cavallo
+Ruolo: Project Manager
+Documento di riferimento: docs/ruolo-gioele-pm.md
+
+========================================
+COMPITI PRINCIPALI DA IMPLEMENTARE
+========================================
+
+- Organizzare la board delle attività:
+  - creazione sondaggio
+  - voto
+  - risultati
+  - lista sondaggi
+  - chiusura sondaggio
+
+- Definire e comunicare la strategia Git:
+  - branch principali (master, develop)
+  - convenzioni per i nomi dei branch feature
+  - regole per i commit e per le Pull Request
+
+- Gestire le Pull Request:
+  - controllare descrizione e cambiamenti proposti
+  - testare manualmente le funzionalità principali
+  - approvare il merge su develop solo se i requisiti sono rispettati
+
+- Mantenere una checklist di accettazione:
+  - verificare logica “un voto per utente”
+  - controllare che i sondaggi si possano creare, votare, chiudere
+  - verificare che la UI mostri correttamente risultati e stati (aperto/chiuso)
+
+========================================
+STATO DI AVANZAMENTO
+========================================
+
+Stato generale: NON INIZIATO
+
+- [ ] Board attività definita e condivisa con il team
+- [ ] Strategia Git documentata e comunicata
+- [ ] Flusso Pull Request e merge sperimentato almeno una volta
+- [ ] Checklist di accettazione compilata e utilizzata nelle revisioni
+
+========================================
+NOTE / PROSSIMI PASSI
+========================================
+
+- Annotare qui i prossimi passi (esempio):
+  - definire elenco attività nel dettaglio
+  - concordare con il team la convenzione dei nomi dei branch
+  - preparare una prima checklist di accettazione
+

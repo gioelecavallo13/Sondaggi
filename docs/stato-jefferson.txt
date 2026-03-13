@@ -1,0 +1,50 @@
+Nome: Jefferson Martinez
+Ruolo: Sviluppatore Frontend
+Documento di riferimento: docs/ruolo-jefferson-frontend.md
+
+========================================
+COMPITI PRINCIPALI DA IMPLEMENTARE
+========================================
+
+- Pagina HOME / lista sondaggi:
+  - chiamare il backend per ottenere l’elenco dei sondaggi
+  - mostrare domanda, stato (aperto/chiuso) e link al dettaglio
+  - prevedere un pulsante per andare alla pagina di creazione sondaggio
+
+- Pagina DETTAGLIO sondaggio:
+  - mostrare domanda e 3–5 opzioni
+  - permettere all’utente di selezionare UNA sola opzione e inviare il voto
+  - mostrare i risultati (numero voti per opzione)
+  - bloccare la possibilità di votare se il sondaggio è chiuso o se l’utente ha già votato
+
+- Pagina CREAZIONE sondaggio:
+  - form con campo domanda
+  - da 3 a 5 campi per le opzioni (gestione dinamica o almeno campi fissi)
+  - validazioni lato client (domanda non vuota, minimo 3 opzioni non vuote, massimo 5)
+  - invio dei dati al backend e gestione della risposta (successo/errore)
+
+- Aggiornamento risultati:
+  - integrare un semplice meccanismo di polling
+  - eseguire periodicamente una richiesta al backend per aggiornare i conteggi dei voti
+
+========================================
+STATO DI AVANZAMENTO
+========================================
+
+Stato generale: NON INIZIATO
+
+- [ ] Layout di base e navigazione tra le pagine
+- [ ] Lista sondaggi collegata alle API di backend
+- [ ] Dettaglio sondaggio con voto e visualizzazione risultati
+- [ ] Pagina di creazione sondaggio funzionante (con validazioni)
+- [ ] Polling per aggiornare i risultati in dettaglio
+
+========================================
+NOTE / PROSSIMI PASSI
+========================================
+
+- Annotare qui i prossimi passi (esempio):
+  - impostare la struttura HTML/Tailwind delle pagine principali
+  - integrare le prime chiamate al backend (GET /polls, GET /polls/{id})
+  - aggiungere il flusso completo di voto e aggiornamento risultati
+

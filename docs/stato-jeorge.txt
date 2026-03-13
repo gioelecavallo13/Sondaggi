@@ -1,0 +1,48 @@
+Nome: Jeorge Mantala
+Ruolo: Sviluppatore Backend (Laravel)
+Documento di riferimento: docs/ruolo-jeorge-backend.md
+
+========================================
+COMPITI PRINCIPALI DA IMPLEMENTARE
+========================================
+
+- Modelli e relazioni Eloquent:
+  - creare i modelli Poll, Option, Vote
+  - definire le relazioni fra sondaggio, opzioni e voti
+
+- Rotte/API principali:
+  - GET /polls        → lista sondaggi disponibili
+  - POST /polls       → creazione sondaggio (domanda + 3–5 opzioni)
+  - GET /polls/{id}   → dettaglio sondaggio con opzioni e conteggi voti
+  - POST /polls/{id}/vote  → invio voto per un sondaggio
+  - POST o PATCH /polls/{id}/close → chiusura sondaggio (solo creatore)
+
+- Logica di voto:
+  - impedire il voto su sondaggi chiusi
+  - verificare che l’opzione appartenga al sondaggio
+  - applicare il vincolo “un voto per utente per sondaggio”
+
+- Risultati e integrazione frontend:
+  - preparare nel dettaglio sondaggio i conteggi dei voti per opzione
+  - restituire risposte JSON chiare per il frontend (messaggi di successo/errore)
+
+========================================
+STATO DI AVANZAMENTO
+========================================
+
+Stato generale: NON INIZIATO
+
+- [ ] Modelli Poll, Option, Vote creati e collegati al database
+- [ ] Rotte/API per lista, creazione, dettaglio e chiusura sondaggi implementate
+- [ ] Logica “un voto per utente” funzionante e testata
+- [ ] Risposte JSON per il frontend definite e verificate con Jefferson
+
+========================================
+NOTE / PROSSIMI PASSI
+========================================
+
+- Annotare qui i prossimi passi (esempio):
+  - creare le prime rotte e controller
+  - testare la creazione di un sondaggio con Postman
+  - implementare e verificare il blocco del doppio voto
+
