@@ -1,0 +1,47 @@
+Nome: Edward Amante
+Ruolo: Responsabile Database
+Documento di riferimento: docs/ruolo-edward-db.md
+
+========================================
+COMPITI PRINCIPALI DA IMPLEMENTARE
+========================================
+
+- Progettazione schema ER:
+  - definire le entità Poll, Option, Vote
+  - definire le relazioni 1–N fra sondaggio e opzioni, sondaggio e voti, opzione e voti
+
+- Migrazioni Laravel:
+  - creare migrazione per la tabella polls (question, creator_id, is_open, timestamps)
+  - creare migrazione per la tabella options (poll_id, label)
+  - creare migrazione per la tabella votes (poll_id, option_id, user_id, created_at)
+  - aggiungere chiavi esterne fra le tabelle
+  - aggiungere vincolo univoco su (poll_id, user_id) nella tabella votes
+
+- Indici e prestazioni:
+  - aggiungere indici dove utile (poll_id e user_id in votes, poll_id in options)
+
+- Seeder di esempio:
+  - creare almeno un sondaggio di esempio con 3–5 opzioni
+  - inserire alcuni voti coerenti con il vincolo “un voto per utente per sondaggio”
+
+========================================
+STATO DI AVANZAMENTO
+========================================
+
+Stato generale: NON INIZIATO
+
+- [ ] Schema ER disegnato e condiviso con il team
+- [ ] Migrazioni per polls, options, votes create e testate
+- [ ] Vincolo univoco (poll_id, user_id) funzionante
+- [ ] Indici principali configurati
+- [ ] Seeder con dati di esempio pronto e funzionante
+
+========================================
+NOTE / PROSSIMI PASSI
+========================================
+
+- Annotare qui i prossimi passi (esempio):
+  - formalizzare lo schema ER definitivo
+  - scrivere e lanciare le prime migrazioni
+  - preparare i seeder per permettere a backend e frontend di testare il sistema
+
