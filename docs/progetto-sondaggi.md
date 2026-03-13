@@ -238,3 +238,90 @@ Il lavoro di gruppo segue queste regole fondamentali:
 
 Questa documentazione generale è il riferimento comune per tutti i membri del team, mentre ogni studente ha anche un proprio documento di ruolo con istruzioni più specifiche.
 
+---
+
+### 11. Pianificazione temporale e grafico di Gantt
+
+La **scadenza generale del progetto** è fissata al **15/04/2026**.  
+Di seguito una proposta di pianificazione per ciascun ruolo, con attività principali e finestre temporali indicative. Le date sono da considerarsi come **obiettivi didattici**: se qualche attività slitta, il team deve coordinarsi con il PM.
+
+#### 11.1 Grafico di Gantt (panoramica progetto)
+
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title Piano di progetto "Sondaggi" (scadenza 2026-04-15)
+
+    section ProjectManager
+    Analisi_requisiti_e_pianificazione       :pm1, 2026-03-13, 5d
+    Coordinamento_team_e_review_periodiche   :pm2, 2026-03-18, 20d
+    Verifica_finale_consegna                 :pm3, 2026-04-08, 7d
+
+    section Backend
+    Setup_progetto_Laravel_e_repo            :be1, 2026-03-13, 4d
+    Implementazione_modello_dati_e_migrazioni:be2, 2026-03-17, 7d
+    API_sondaggi_(crea/vota/risultati)       :be3, 2026-03-24, 7d
+    Rifiniture,_validazioni_e_test           :be4, 2026-03-31, 10d
+
+    section Frontend
+    Setup_frontend_e_layout_base             :fe1, 2026-03-15, 5d
+    Pagine_lista,_dettaglio_e_voto           :fe2, 2026-03-20, 10d
+    Aggiornamento_risultati_e_UI_finale      :fe3, 2026-03-30, 10d
+
+    section Database
+    Progettazione_schema_e_relazioni         :db1, 2026-03-13, 5d
+    Ottimizzazione_indici_e_vincoli          :db2, 2026-03-18, 7d
+    Supporto_a_migrazioni_e_dati_di_test     :db3, 2026-03-25, 7d
+```
+
+> Nota: le date sono espresse in formato `YYYY-MM-DD` per compatibilità con il diagramma mermaid.
+
+#### 11.2 Dettaglio per ruolo e scadenze intermedie
+
+- **Project Manager (Gioele)**
+  - **Entro 20/03/2026**:
+    - Consolidare i requisiti (funzionali e non funzionali) insieme al docente.
+    - Verificare che tutti i membri del team abbiano clonato la repo e creato il proprio branch.
+  - **Dal 21/03 al 07/04/2026**:
+    - Organizzare brevi checkpoint (anche asincroni) per controllare avanzamento backend, frontend e database.
+    - Aggiornare eventuali documenti di stato (`docs/stato-gioele.txt`).
+  - **Dall’08/04 al 15/04/2026**:
+    - Coordinare la fase di integrazione finale e verifica complessiva.
+    - Preparare una breve presentazione o riepilogo del progetto.
+
+- **Sviluppatore Backend (Jeorge)**
+  - **Entro 20/03/2026**:
+    - Completare le **migrazioni principali** (`polls`, `options`, `votes`) e la logica di base “un voto per utente”.
+  - **Entro 31/03/2026**:
+    - Esporre le **API o rotte** necessarie al frontend per:
+      - creare sondaggi;
+      - votare;
+      - leggere lista sondaggi e risultati.
+  - **Dal 01/04 al 10/04/2026**:
+    - Rifinire la gestione errori, i messaggi di risposta e gli eventuali controlli di coerenza dati.
+    - Collaborare con frontend e DB per correggere problemi di integrazione.
+
+- **Sviluppatore Frontend (Jefferson)**
+  - **Entro 22/03/2026**:
+    - Definire il **layout principale** del sito (lista sondaggi, pagina dettaglio, form creazione).
+    - Collegare il frontend alle API/mock per simulare il flusso principale.
+  - **Entro 02/04/2026**:
+    - Implementare:
+      - pagina lista sondaggi (stato, numero voti);
+      - pagina dettaglio con form di voto;
+      - visualizzazione risultati base.
+  - **Dal 03/04 al 12/04/2026**:
+    - Rifinire la UI/UX (messaggi di errore chiari, blocco del secondo voto, feedback visivo).
+    - Testare il comportamento con il backend reale.
+
+- **Responsabile Database (Edward)**
+  - **Entro 19/03/2026**:
+    - Produrre una versione consolidata dello **schema ER** (anche solo documentato) e delle **tabelle** con campi principali.
+  - **Entro 27/03/2026**:
+    - Definire i **vincoli di integrità** (FK, indici, unique per coppia `poll_id` + `user_id`) e concordare con il backend le migrazioni.
+  - **Dal 28/03 al 08/04/2026**:
+    - Preparare **dati di test** significativi per permettere a frontend e backend di provare il sistema in modo realistico.
+    - Collaborare nella risoluzione di eventuali problemi di performance o incoerenza dati.
+
+Con questa pianificazione, tutti i membri del team hanno **obiettivi intermedi chiari** e una visione d’insieme del percorso che porta alla consegna finale del **15/04/2026**.
+
