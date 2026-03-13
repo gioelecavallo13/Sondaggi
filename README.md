@@ -20,6 +20,21 @@ Il progetto è sviluppato in **collaborazione tra più persone**, utilizzando **
 
 ---
 
+## 🔽 Clonare il repository sul proprio PC di casa
+
+Per tutti i membri del team è disponibile un **tutorial dettagliato** che spiega, passo passo, come clonare il repository del progetto “Sondaggi” sul proprio computer (via HTTPS o SSH, con controllo prerequisiti e verifiche finali).
+
+- **Tutorial completo (da terminale):** vedi `[docs/tutorial-clonazione-repo.md](docs/tutorial-clonazione-repo.md)`
+
+Una volta completata la clonazione, ogni studente può seguire le istruzioni specifiche del proprio ruolo:
+
+- Project Manager: `[docs/ruolo-gioele-pm.md](docs/ruolo-gioele-pm.md)`
+- Backend: `[docs/ruolo-jeorge-backend.md](docs/ruolo-jeorge-backend.md)`
+- Frontend: `[docs/ruolo-jefferson-frontend.md](docs/ruolo-jefferson-frontend.md)`
+- Database: `[docs/ruolo-edward-db.md](docs/ruolo-edward-db.md)`
+
+---
+
 ## 🧑‍💻 Lavorare al progetto con Visual Studio Code (modalità grafica)
 
 ### 🔽 Clonare il repository
